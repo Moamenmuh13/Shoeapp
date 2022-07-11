@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Shoeapp</string>
+    <string name="email">Email</string>
+    <string name="passwrd">Passwrd</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign UP</string>
 </resources>

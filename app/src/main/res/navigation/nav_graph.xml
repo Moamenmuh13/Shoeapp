@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.mundroid.apps.shoeapp.HomeFragment"
+        android:name="com.mundroid.apps.shoeapp.ui.fragments.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/instructionFragment"
-        android:name="com.mundroid.apps.shoeapp.InstructionFragment"
+        android:name="com.mundroid.apps.shoeapp.ui.fragments.InstructionFragment"
         android:label="InstructionFragment"
         tools:layout="@layout/fragment_instruction" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.mundroid.apps.shoeapp.LoginFragment"
+        android:name="com.mundroid.apps.shoeapp.ui.fragments.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login" >
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/shoeFragment"
-        android:name="com.mundroid.apps.shoeapp.ShoeFragment"
+        android:name="com.mundroid.apps.shoeapp.ui.fragments.ShoeFragment"
         android:label="ShoeFragment"
         tools:layout="@layout/fragment_shoe" >
         <action
