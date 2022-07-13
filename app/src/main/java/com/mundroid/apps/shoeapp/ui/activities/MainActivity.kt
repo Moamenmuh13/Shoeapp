@@ -23,7 +23,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        return super.onSupportNavigateUp()
-    }
+//    override fun onSupportNavigateUp(): Boolean {
+//
+//        return NavigationUI.navigateUp(navController, drawerLayout)
+//    }
+
 }
