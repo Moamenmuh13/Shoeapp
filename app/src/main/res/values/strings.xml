@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Shoeapp</string>
     <string name="email">Email</string>
-    <string name="passwrd">Passwrd</string>
+    <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign UP</string>
     <string name="welcome_dude">Welcome Dude!!</string>
@@ -9,4 +9,10 @@
     <string name="next">Next</string>
     <string name="shoe_store">Shoe Store</string>
     <string name="are_your_ready">Are your ready!!</string>
+    <string name="finally_u_are_here">Finally U are here</string>
+    <string name="adding_item">Adding Item</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company_name">Company Name</string>
+    <string name="description">Description</string>
+    <string name="shoe_size">Shoe Size</string>
 </resources>

@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_margin="30dp"
-            android:hint="@string/passwrd"
+            android:hint="@string/password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout">

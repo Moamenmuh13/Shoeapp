@@ -3,11 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/drawable/border.xml" value="0.231" />
+        <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/2.xml" value="0.3416666666666667" />
         <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/activity_sheo_details.xml" value="0.3416666666666667" />
         <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/fragment_home.xml" value="0.365625" />
         <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/fragment_instruction.xml" value="0.365625" />
         <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/fragment_login.xml" value="0.365625" />
         <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/fragment_shoe.xml" value="0.365625" />
+        <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/fragment_shoe_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/fragment_shoe_recycler.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/ticket_shoe_list.xml" value="0.365625" />
+        <entry key="..\:/Users/momen/AndroidStudioProjects/Shoeapp/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/mumen/AndroidStudioProjects/Shoeapp/app/src/main/res/drawable/ic_twotone_store_24.xml" value="0.1395" />
         <entry key="..\:/Users/mumen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/mumen/AndroidStudioProjects/Shoeapp/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />

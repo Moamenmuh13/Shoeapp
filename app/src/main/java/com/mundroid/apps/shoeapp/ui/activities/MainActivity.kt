@@ -1,13 +1,12 @@
 package com.mundroid.apps.shoeapp.ui.activities
 
-import android.database.DatabaseUtils
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.databinding.DataBindingUtil
+import android.view.Menu
+import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.mundroid.apps.shoeapp.R
 import com.mundroid.apps.shoeapp.databinding.ActivityMainBinding
@@ -20,12 +19,28 @@ class MainActivity : AppCompatActivity() {
         binding = setContentView(this, R.layout.activity_main)
 
         navController = this.findNavController(R.id.navHostFragment)
+        NavigationUI.setupActionBarWithNavController(this,navController)
+
+
 
     }
 
-//    override fun onSupportNavigateUp(): Boolean {
-//
-//        return NavigationUI.navigateUp(navController, drawerLayout)
-//    }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.logout_menu_item -> {
+
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp()
+    }
 
 }
