@@ -14,6 +14,10 @@ import com.mundroid.apps.shoeapp.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment(), View.OnClickListener {
     private lateinit var binding: FragmentLoginBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -43,6 +47,6 @@ class LoginFragment : Fragment(), View.OnClickListener {
     }
 
     private fun navigateToNextFragment() {
-     findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+        findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
     }
 }

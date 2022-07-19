@@ -6,7 +6,10 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Shoe(
-    var shoeName: String, var shoeSize: Int, var companyName: String, var description: String,
+    var shoeName: String = "",
+    var shoeSize: String = "",
+    var companyName: String = "",
+    var description: String = "",
 
-    ) : Parcelable
+    ):Parcelable
 
