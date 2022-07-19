@@ -30,7 +30,7 @@ class ShoeDetailsFragment : Fragment(), View.OnClickListener {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         binding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_details, container, false)
         initViews()
@@ -76,21 +76,22 @@ class ShoeDetailsFragment : Fragment(), View.OnClickListener {
     }
 
     private fun addingData() {
-
-        shoeName = binding.shoeNameEditText.text.toString()
-        shoeSize = binding.shoeSizeEditText.text.toString() + ": Size"
-        companyName = binding.companyNameEditText.text.toString()
-        description = binding.descriptionEditText.text.toString()
-
+        gettingDataFromEditTextFields()
         shoeViewModel.addShoes(Shoe(shoeName!!, shoeSize!!, companyName!!, description!!))
         closeFragment()
     }
 
-    private fun closeFragment() {
 
+    private fun closeFragment() {
         requireView().findNavController()
             .navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeFragment())
+    }
 
+    private fun gettingDataFromEditTextFields() {
+        shoeName = binding.shoeNameEditText.text.toString()
+        shoeSize = binding.shoeSizeEditText.text.toString() + ": Size"
+        companyName = binding.companyNameEditText.text.toString()
+        description = binding.descriptionEditText.text.toString()
     }
 
     private fun clearData() {
@@ -101,6 +102,7 @@ class ShoeDetailsFragment : Fragment(), View.OnClickListener {
     }
 
 
+    @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.main_menu, menu)
         return super.onCreateOptionsMenu(menu, inflater)
@@ -110,7 +112,7 @@ class ShoeDetailsFragment : Fragment(), View.OnClickListener {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.logout_menu_item -> {
-//                findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToLoginFragment())
+                findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToLoginFragment())
 
             }
         }

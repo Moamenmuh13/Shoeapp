@@ -14,7 +14,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
         initViews()
         setHasOptionsMenu(true)
@@ -37,6 +37,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
         findNavController().navigate(R.id.action_homeFragment_to_instructionFragment)
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.main_menu, menu)
         return super.onCreateOptionsMenu(menu, inflater)
@@ -46,7 +47,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.logout_menu_item -> {
-//                findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToLoginFragment())
+                findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToLoginFragment())
             }
         }
         return super.onOptionsItemSelected(item)
