@@ -22,7 +22,6 @@ import com.mundroid.apps.shoeapp.viewmodels.ShoeViewModel
 
 class ShoeFragment : Fragment(), View.OnClickListener {
     private lateinit var binding: FragmentShoeBinding
-    private lateinit var ticketShoeListBinding: TicketShoeListBinding
     private val shoeViewModel: ShoeViewModel by activityViewModels()
 
 
@@ -32,8 +31,6 @@ class ShoeFragment : Fragment(), View.OnClickListener {
         savedInstanceState: Bundle?,
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe, container, false)
-        ticketShoeListBinding =
-            TicketShoeListBinding.inflate(layoutInflater, binding.parentLinearLayout, false)
         initViews()
         setHasOptionsMenu(true)
 //        getData()
@@ -45,14 +42,20 @@ class ShoeFragment : Fragment(), View.OnClickListener {
     private fun getShoes() {
         shoeViewModel.getShoesList().observe(requireActivity()) { listItem ->
             run {
-                addViewToParentLayout(listItem)
+                binding.parentLinearLayout.removeAllViews()
+                addingDataToParentLayout(listItem)
             }
         }
     }
 
-    private fun addViewToParentLayout(listItem: MutableList<Shoe>) {
-        binding.parentLinearLayout.removeAllViews()
+    private fun addingDataToParentLayout(listItem: MutableList<Shoe>) {
         listItem.forEach { item ->
+            val ticketShoeListBinding =
+                TicketShoeListBinding.inflate(
+                    layoutInflater,
+                    binding.parentLinearLayout,
+                    false
+                )
             ticketShoeListBinding.shoe = item
             binding.parentLinearLayout.addView(
                 ticketShoeListBinding.root
